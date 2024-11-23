@@ -1,4 +1,5 @@
 ﻿using aspnetcore_playground.Models;
+using aspnetcore_playground.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace aspnetcore_playground.Controllers
@@ -16,7 +17,8 @@ namespace aspnetcore_playground.Controllers
 
         public IActionResult List()
         {
-            return View(_pieRepository.AllPies);
+            PieListViewModel piesListViewModel = new PieListViewModel(_pieRepository.AllPies, "Cheese cakes");
+            return View(piesListViewModel);
         }
     }
 }

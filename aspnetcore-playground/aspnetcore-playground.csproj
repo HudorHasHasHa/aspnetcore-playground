@@ -7,4 +7,8 @@
     <RootNamespace>aspnetcore_playground</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Category\" />
+  </ItemGroup>
+
 </Project>
