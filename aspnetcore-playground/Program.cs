@@ -26,4 +26,5 @@ if (app.Environment.IsDevelopment())
 //handle incomming requests correctly: endpoint middleware, route to the views, enables mvc handle incomming requests
 app.MapDefaultControllerRoute();
 
+DbInit.Seed(app);
 app.Run();
